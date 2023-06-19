@@ -5,6 +5,7 @@ import datetime
 import tkinter.filedialog as box
 import os
 from tkinter import *
+from getpass import getpass
 
 def add_database(filename):
     fd = open(filename, 'r')
@@ -18,7 +19,7 @@ def add_database(filename):
                 cur.execute(command)
         except IOError as msg:
             print ("Command skipped: ", msg)
-password = input("Enter your MySQL password: ")
+password = getpass("Enter your MySQL password here: ")
 
 try: 
     try: 
