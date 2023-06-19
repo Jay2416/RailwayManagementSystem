@@ -26,6 +26,7 @@ right time in right shape.
 - **datetime**
 - **os**
 - **tkinter**
+- **getpass**
 - **pandas**, to install it, use the following command on your command prompt
 
 ```bash
